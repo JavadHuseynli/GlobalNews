@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/log_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="339dp"
+        android:src="@drawable/ic_action_back" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="162dp"
+        android:text="Login"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/log_email"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="33dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000"
+        android:textColorHint="#bcbcbc"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/log_pass"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/log_email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="33dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#bcbcbc"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/log_btn"
+        android:layout_width="193dp"
+        android:layout_height="58dp"
+        android:layout_alignStart="@+id/log_pass"
+        android:layout_alignTop="@+id/log_pass"
+        android:layout_alignEnd="@+id/log_pass"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/btnback"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

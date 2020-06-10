@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".RegisActivity">
+
+    <ImageView
+        android:id="@+id/reg_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="336dp"
+        android:src="@drawable/ic_action_back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="88dp"
+        android:text="Registration"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="64dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000"
+        android:textColorHint="#bcbcbc"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/reg_pass"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/reg_email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="59dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#bcbcbc"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/reg_passConfRegis"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/reg_email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="57dp"
+        android:hint="Password confirmation"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#bcbcbc"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="177dp"
+        android:layout_height="61dp"
+        android:layout_alignStart="@+id/reg_pass"
+        android:layout_alignTop="@+id/reg_passConfRegis"
+        android:layout_alignEnd="@+id/reg_pass"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/btnback"
+        android:text="Registration"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>
